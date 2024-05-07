@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tribute</title>
+    <style>
+        
+        body 
+        {
+          
+            background-image:url(back.jpg); 
+            background-size: 2000px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        table {
+            background-color: rgb(106, 136, 136);  
+            text-align:justify;
+            border: 2px solid;
+            width: 400px;
+            height: 270px;
+            position: fixed;
+            top: 150px;
+            left:500px;
+        }
+    </style>
+</head>
+<body>
+<table>
+<form id="myForm" onsubmit="return validateForm()">
+    <tr class="a">
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+    </tr>
+    
+    <tr class="b">
+        <td><label for="Date Of Birth">Date Of Birth:</label></td>
+        <td><input type="text" id="Date Of Birth" name="Date Of Birth" required></td>
+    </tr>
+    
+    <tr class="c">
+        <td><label for="Title">Title:</label></td>
+        <td><input type="text" id="Title" name="Title" required></td>
+    </tr>
+    
+    <tr class="d">
+        <td><label for="Tribute Message">Tribute Message:</label></td>
+        <td><textarea class="form-control" type="text" id="Tribute Message" name="Tribute Message" rows="5" required></textarea></td>
+    </tr>
+    
+    <tr class="e">
+        <td><input type="submit" value="Submit"></td>
+    </tr>
+</form>
+</table>
+
+<script>
+    function showAlert(message) {
+        alert(message);
+    }
+
+    function validateForm() {
+        // Before form submission alert
+        showAlert("Please review your information before submitting the form.");
+
+        // Add any additional validation logic here
+
+        // After form submission alert
+        showAlert("Form submitted successfully!");
+
+        // You can prevent the form from actually submitting by returning false
+        // If you want the form to submit, simply return true
+        return false;
+    }
+</script>
+</body>
+</html>
