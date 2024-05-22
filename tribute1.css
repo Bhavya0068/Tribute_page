@@ -8,8 +8,8 @@
 {
  background-color:rgb(194, 176, 240);
  min-height: 100vh;
- border: 5px solid;
- padding: 22px;
+ border: 5.1px solid;
+ padding: 21px;
  max-width:1251px;
  
 }
@@ -20,6 +20,6 @@
 
 .image_container,
 img{
-    width:300px;
+    width:301px;
     height:320px;
 }
